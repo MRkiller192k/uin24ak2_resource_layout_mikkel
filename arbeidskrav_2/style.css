@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+:root {
+    --darkblue: #2A324B;
+    --white: #fff;
+    --black: #58699D;
+    --maxwidth: 1200px;
+}
+
+body{
+    height: 100%;
+    margin: 3%;
+    font-family: Arial;
+    background-color: #E1E5EE;
+  }
+  
+
+div.container{
+    width: 100%;
+    max-width: var(--maxwidth);
+    margin: 0 auto;
+    background-color: var(--white);
+}
+
+h2{
+    color: var(--darkblue);
+}
+
+
+nav{
+   position: relative;
+   left: -3.3%;
+   width: 100%;
+   background-color: var(--with);
+   display: flex;
+ 
+    
+}
+.MenuItem{
+    border-collapse: separate; 
+    border-spacing: 5em;
+}
+
+nav button:hover {
+    background-color: var(--white);
+    color: var(--darkblue);
+}
+
+nav button{
+background-color: var(--darkblue);
+color: var(--white);
+padding: .5rem 1rem;
+text-transform: uppercase;
+}
+
+
+.MenuItem:hover .open{
+    position: fixed;
+    top: auto;
+    display: block;
+    padding: 1rem;
+    color: var(--darkblue);
+    background-color: var(--white);
+    width: 75.54%;
+    
+
+}
+
+#subMenu{
+    display: flex;
+    flex-direction: column;
+}
+
+div.open{
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    nav button{
+        color: var(--black);
+        border-style: groove;
+        padding: .1rem 1rem;
+        text-transform: uppercase;
+        }
+        .MenuItem:hover .open{
+            position: fixed;
+            top: auto;
+            display: block;
+            left: 15px;
+            padding: 1rem;
+            border-style: groove;
+            width: 86.5%;
+            
+        
+        }
+}
